@@ -2,11 +2,11 @@ const expectchai = require('chai').expect;
 
 describe('end to end scenarios', function () {
   it('ene to end test 1', function () {
-    this.retries(2);
+    this.retries(3);
     const products = ['Blackberry', 'Nokia Edge'];
     browser.url('https://rahulshettyacademy.com/loginpagePractise/#');
     $('#username').waitForEnabled();
-    $('#username1').setValue('rahulshettyacademy');
+    $('#username').setValue('rahulshettyacademy');
     $('#password').setValue('learning');
     $('#signInBtn').click();
     const link = $('*=Checkout');
